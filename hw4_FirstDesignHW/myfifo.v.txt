@@ -1,0 +1,61 @@
+/*//reset
+//Should we use $readmemh
+//can use inout but not recommended, 
+//once data is read in fifo, should it get pop out/deleted?
+are we making a ram? Ans. No, were not cos ram is LIFO . ram is usually kbytes
+*/
+`timescale 1ns/10ps
+
+module myfifo(
+	input clk,
+	input wr_data,
+	input wr_en,
+	input rd_en,
+	input reset,
+	output rd_data,
+	output reg full,
+	output reg empty);
+
+	reg [44:0] mem [31:0];
+	reg [4:0] rd_ptr,wr_ptr;
+	wire [44:0] wr_data;
+	reg [44:0] rd_data;
+	integer i;	
+
+
+	always @ (*)
+	begin		
+		//Full Check
+		if (wr_ptr+1==rd_ptr)
+			full = 1'b1;
+		else 	full = 1'b0;
+		//Empty Check
+		if (wr_ptr==rd_ptr)
+			empty = 1'b1;
+		else 	empty = 1'b0; 
+	end
+	
+	
+	always @ (posedge clk)
+	begin
+		if (reset) begin
+			rd_ptr <=0;
+			wr_ptr <=0;
+			rd_data <=0;
+		end			
+		else begin
+			if (rd_en) begin		
+				rd_data <= #1 mem[rd_ptr];
+				rd_ptr <= #1 rd_ptr+1;
+							
+				end
+
+			 else if (wr_en) begin
+				mem[wr_ptr] <= #1 wr_data;
+				wr_ptr <= #1 wr_ptr+1;	
+				end
+			//else rd_data <= #1 45'hffffff000;	
+		end
+	end
+
+endmodule

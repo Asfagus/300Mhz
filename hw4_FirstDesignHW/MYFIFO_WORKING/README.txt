@@ -1,0 +1,1 @@
+Its basically myfifo modelled with the synopsys one.

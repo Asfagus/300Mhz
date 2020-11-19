@@ -1,0 +1,10 @@
+runmf script run started on Wed Feb 19 00:21:22 2020
+run on machine coe-ee-cad12.sjsuad.sjsu.edu
+
+Run with a clock period of 5.0
+options syn False gates False
+VCS simulation worked
+NCverilog simulation worked
+Synthesis finished OK
+Gate level simulation worked
+Completed the mf run
