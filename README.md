@@ -1,7 +1,7 @@
 In this project, we completed a design from RTL-GDSii flow
 It had several stages.
 
-First, I had to create a multiplier and adder in Verilog and run it at a clock speed of 200Mhz, 
+First, I had to create a multiplier and adder in Verilog and run it at a clock speed of 200Mhz, add two-flag push model,  
 and get positive Setup Slack. This is in hw2
 
 Then we had to run the same design at 300Mhz, so we instantiated synopsys mul-add IPs for pipelined and faster design.
