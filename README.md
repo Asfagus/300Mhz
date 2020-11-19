@@ -1,4 +1,4 @@
-For this project, we had several stages.https://github.com/Asfagus/300Mhz/blob/main/README.md
+For this project, we had several stages.
 First, I had to create a multiplier and adder in Verilog and run it at a clock speed of 200Mhz, 
 and get positive Setup Slack. This is in hw2
 Then we had to run the same design at 300Mhz, and we instantiated synopsys mul-add IPs for pipelined and faster design.
