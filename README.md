@@ -4,7 +4,7 @@ It had several stages.
 First, I had to create a multiplier and adder in Verilog and run it at a clock speed of 200Mhz, 
 and get positive Setup Slack. This is in hw2
 
-Then we had to run the same design at 300Mhz, and we instantiated synopsys mul-add IPs for pipelined and faster design.
+Then we had to run the same design at 300Mhz, so we instantiated synopsys mul-add IPs for pipelined and faster design.
 
 Then, we had to add a fifo, to handle the testbench of different clock speed. This is in hw4_designhw1
 
