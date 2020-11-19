@@ -1,0 +1,38 @@
+csi-ncsim - CSI: Command line:
+ncsim
+    -f /home/014538550/287/hw1/INCA_libs/irun.lnx86.15.20.nc/coe-ee-cad12.sjsuad.sjsu.edu_16490/ncsim.args
+        +access+r
+        -MESSAGES
+        +EMGRLOG ncverilog.log
+        -XLSTIME 1582792940
+        -XLKEEP
+        -XLMODE ./INCA_libs/irun.lnx86.15.20.nc
+        -RUNMODE
+        -CDSLIB ./INCA_libs/irun.lnx86.15.20.nc/cds.lib
+        -HDLVAR ./INCA_libs/irun.lnx86.15.20.nc/hdl.var
+        -XLNAME ncverilog
+        -XLVERSION TOOL:	ncverilog	15.20-s076
+        -XLNAME ./INCA_libs/irun.lnx86.15.20.nc/coe-ee-cad12.sjsuad.sjsu.edu_16490
+    -CHECK_VERSION TOOL:	ncverilog	15.20-s076
+    -LOG_FD 4
+    -LOG_FD_NAME ncverilog.log
+    -cmdnopsim
+    -runlock /home/014538550/287/hw1/INCA_libs/irun.lnx86.15.20.nc/.nclib.lock
+    -runscratch /home/014538550/287/hw1/INCA_libs/irun.lnx86.15.20.nc/coe-ee-cad12.sjsuad.sjsu.edu_16490
+
+csi-ncsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 1775171 NS + 0
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncsim	15.20-s076
+  HOSTNAME: coe-ee-cad12.sjsuad.sjsu.edu
+  OPERATING SYSTEM: Linux 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64
+  MESSAGE: Unexpected signal #25 (File Size Limit Exceeded), program terminated
+-----------------------------------------------------------------
+
+csi-ncsim - CSI: Cadence Support Investigation, recording details
+Error: Error processing callstack!
+csi-ncsim - CSI: investigation complete took 0.000 secs, send this file to Cadence Support

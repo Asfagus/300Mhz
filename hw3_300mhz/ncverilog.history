@@ -1,0 +1,17 @@
+s1(26Feb2020:22:34:16):  ncverilog +access+r tbmf.sv 
+s2(26Feb2020:22:38:14):  ncverilog +access+r tbmf.sv 
+s3(26Feb2020:22:58:46):  ncverilog +access+r tbmf.sv 
+s4(26Feb2020:23:26:37):  ncverilog +access+r tbmf.sv 
+s5(27Feb2020:00:15:33):  ncverilog +access+r tbmf.sv 
+s6(27Feb2020:00:19:43):  ncverilog +access+r tbmf.sv 
+s7(27Feb2020:00:42:20):  ncverilog +access+r tbmf.sv 
+s8(27Feb2020:00:46:07):  ncverilog +access+r tbmf.sv 
+s9(27Feb2020:00:57:02):  ncverilog +access+r tbmf.sv 
+s10(27Feb2020:01:10:17):  ncverilog +access+r tbmf.sv 
+s11(27Feb2020:01:19:18):  ncverilog +access+r tbmf.sv 
+s12(27Feb2020:01:30:59):  ncverilog +access+r tbmf.sv 
+s13(27Feb2020:01:39:58):  ncverilog +access+r tbmf.sv 
+s14(27Feb2020:01:45:35):  ncverilog +libext+.tsbvlibp -y /apps/toshiba/sjsu/verilog/tc240c +access+r tbmf_gates.sv 
+s15(27Feb2020:01:48:10):  ncverilog +access+r tbmf.sv 
+s16(27Feb2020:08:58:35):  ncverilog +access+r tbmf.sv 
+s17(27Feb2020:09:06:33):  ncverilog +libext+.tsbvlibp -y /apps/toshiba/sjsu/verilog/tc240c +access+r tbmf_gates.sv 
